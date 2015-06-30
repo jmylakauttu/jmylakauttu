@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    padding: 157px 0 0 0;
+    padding: 166px 0 0 0;
     font-weight: 300;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -36,6 +36,12 @@ header h1 {
     margin: 0;
     display: inline-block;
     vertical-align: middle;
+}
+
+header p {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 1em;
 }
 
 nav {
