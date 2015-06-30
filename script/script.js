@@ -16,12 +16,14 @@ $(function() {
 function sendContactRequest() {
 
   var email = $('#email').val();
-  var phone = $('#email').val();
+  var phone = $('#phone').val();
   var desc = $('#desc').val();
 
   var validationFailed = $('#validation-failed');
   var sendFailed = $('#send-failed');
   var sendOk = $('#send-ok');
+  var sendButton = $('#send-button');
+  var spinner = $('#spinner');
 
   validationFailed.hide();
   sendFailed.hide();
@@ -30,6 +32,8 @@ function sendContactRequest() {
   if(!email && !phone) {
     validationFailed.show();
   } else {
+    spinner.show();
+    sendButton.prop('disabled', true);
     var message = "<p>" + email + "</p>" + "<p>" + phone + "</p>" + "<p>" + desc + "</p>";
 
     $.ajax({
@@ -44,16 +48,18 @@ function sendContactRequest() {
               "email": "purts12015@gmail.com",
               "type": "to"
             }
-          ]
-        },
-        "autotext": "true",
-        "subject": "Tarjouspyyntö web-sivulta",
-        "html": message
+          ],
+          "subject": "Tarjouspyynto web-sivulta",
+          "html": message
+        }
       }
     }).done(function(response) {
       sendOk.show();
     }).fail(function() {
+      sendButton.prop('disabled', false);
       sendFailed.show();
+    }).always(function() {
+      spinner.hide();
     })
   }
 

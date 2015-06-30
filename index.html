@@ -170,11 +170,6 @@
 
     <p>Voit lähettää meille tarjouspyynnön oheisella lomakkeella.</p>
 
-    <div class="alert alert-danger" role="alert" id="validation-failed">Ole hyvä ja anna sähköpostiosoitteesi tai puhelinnumerosi, jotta voimme olla sinuun yhteydessä.</div>
-    <div class="alert alert-danger" role="alert" id="send-failed">Tarjouspyynnön lähettäminen ei onnistunut. Voit myös ottaa yhteyttä suoraan puhelimella numeroon 0500 732437.</div>
-
-    <div class="alert alert-success" role="alert" id="send-ok">Tarjouspyyntö lähetetty. Olemme sinuun yhteydessä niin pian kuin mahdollista!</div>
-
     <form>
 
         <div class="form-group">
@@ -192,7 +187,11 @@
             <textarea rows="10" class="form-control" placeholder="Tarjouspyynnön kuvaus" id="desc"></textarea>
         </div>
 
-        <button id="send-button" type="submit" class="btn btn-success">Lähetä</button>
+        <div class="alert alert-danger" role="alert" id="validation-failed">Ole hyvä ja anna sähköpostiosoitteesi tai puhelinnumerosi, jotta voimme olla sinuun yhteydessä.</div>
+        <div class="alert alert-danger" role="alert" id="send-failed">Tarjouspyynnön lähettäminen ei onnistunut. Voit myös ottaa yhteyttä suoraan puhelimella numeroon 0500 732437.</div>
+        <div class="alert alert-success" role="alert" id="send-ok">Tarjouspyyntö lähetetty. Olemme sinuun yhteydessä niin pian kuin mahdollista!</div>
+
+        <button id="send-button" type="submit" class="btn btn-success">Lähetä</button> <i id="spinner" class="fa fa-circle-o-notch fa-spin"></i>
 
     </form>
 

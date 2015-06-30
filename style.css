@@ -148,3 +148,10 @@ form {
 .alert {
     display: none;
 }
+
+#spinner {
+    display: none;
+    color: lightgray;
+    vertical-align: middle;
+    margin-left: 1em;
+}
