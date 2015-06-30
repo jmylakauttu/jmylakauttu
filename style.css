@@ -7,7 +7,7 @@ body {
 }
 
 .header-content {
-    background-color: #2b2b2b;
+    background-color: #35992b;
     padding: 2em
 }
 
@@ -39,7 +39,7 @@ header h1 {
 }
 
 nav {
-    background-color: #35992b;
+    background-color: #2b2b2b;
     display: block;
     padding: 1em 2em;
 }
