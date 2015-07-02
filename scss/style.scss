@@ -151,10 +151,7 @@ h2 {
     background-position: 50% 35%;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include breakpoint($mobile-only) {
-      margin-bottom: 0.5em;
-    }
+    margin-bottom: 0.5em;
 
     @include breakpoint($medium) {
       display: inline-block;
