@@ -5,7 +5,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top - 180
+          scrollTop: target.offset().top - parseInt($('body').css('paddingTop'))
         }, 1000);
         return false;
       }

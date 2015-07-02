@@ -1,0 +1,245 @@
+@import "bower_components/breakpoint-sass/stylesheets/breakpoint.scss";
+
+/* Colors */
+$white : #ffffff;
+$black : #2b2b2b;
+$green : #35992b;
+$lightgray: #f1eff9;
+
+/* Breakpoint variables */
+$bp-small: 500px;
+$bp-medium: 700px;
+$bp-large: 900px;
+
+$mobile-only: max-width $bp-small;
+$medium-only: max-width $bp-medium;
+$small: $bp-small, 'no-query' '.lt-ie9';
+$medium: $bp-medium, 'no-query' '.lt-ie9';
+$large: $bp-large;
+
+@mixin content-width() {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  @include breakpoint($mobile-only) {
+    max-width: 500px;
+  }
+
+  @include breakpoint($medium) {
+    max-width: 700px;
+  }
+
+  @include breakpoint($large) {
+    max-width: 900px;
+  }
+}
+
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+
+  @include  breakpoint($large) {
+    padding-top: 192px;
+  }
+}
+
+header {
+  color: $white;
+
+  .header-content {
+    background-color: $green;
+    padding: 2em 0.5em;
+
+    h1 {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5em;
+
+      @include breakpoint($mobile-only) {
+        font-size: 2em;
+      }
+
+    }
+
+    p {
+      margin-left: 55px;
+      margin-top: -5px;
+    }
+
+    @include breakpoint($mobile-only) {
+      background-color: $black;
+    }
+  }
+
+  .nav-wrapper {
+    margin: 0 auto;
+  }
+
+  nav {
+    background-color: $black;
+    display: block;
+    padding: 1em 0.5em;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+      float: left;
+      text-align: center;
+      margin-right: 1em;
+
+      a, a span {
+        color: $white !important;
+        text-transform: uppercase;
+        font-weight: 500;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .glyphicon {
+      margin-right: 0.5em;
+    }
+
+    @include breakpoint($mobile-only) {
+      display: none;
+    }
+  }
+
+  @include breakpoint($large) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+footer {
+  color: $white;
+  padding: 2em;
+  background-color: $black;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 2em 0 1em 0;
+  text-align: center;
+  border-bottom: 1px solid $lightgray;
+  padding-bottom: 0.5em;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  @include content-width;
+}
+
+.img-wrapper {
+  @include content-width;
+  margin: 2em auto;
+
+  .img {
+    height: 300px;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint($mobile-only) {
+      margin-bottom: 0.5em;
+    }
+
+    @include breakpoint($medium) {
+      display: inline-block;
+      margin-left: 0.5em;
+      width: 210px;
+    }
+
+    @include breakpoint($large) {
+      width: 280px;
+    }
+  }
+
+  .img-1 {
+    background-image: url('../img/pic1_l.jpg');
+    @include breakpoint($medium) {
+      background-image: url('../img/pic1.jpg');
+    }
+  }
+
+  .img-2 {
+    background-image: url('../img/pic2_l.jpg');
+    @include breakpoint($medium) {
+      background-image: url('../img/pic2.jpg');
+    }
+  }
+
+  .img-3 {
+    background-image: url('../img/pic3_l.jpg');
+    @include breakpoint($medium) {
+      background-image: url('../img/pic3.jpg');
+    }
+  }
+}
+
+.jumbotron {
+  font-family: 'Helvetica Neue' ,Helvetica, Arial, sans-serif;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
+
+.bg-jumbotron {
+  @include content-width;
+  height: 400px;
+  background-image: url('../img/bg.jpg');
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+  margin-bottom: 2em;
+  margin-top: 1px;
+}
+
+.bg-jumbotron p {
+  color: $white;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.bs-callout ul {
+    margin: 1em 0;
+}
+
+.btn-success {
+    background-color: $green !important;
+}
+
+form {
+    margin: 2em 0;
+}
+
+.alert {
+    display: none;
+}
+
+#spinner {
+    display: none;
+    color: lightgray;
+    vertical-align: middle;
+    margin-left: 1em;
+}
