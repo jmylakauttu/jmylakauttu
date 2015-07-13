@@ -42,10 +42,10 @@ function sendContactRequest() {
       data: {
         "key": "bfe92QqfRMzq6bLatXy4CQ",
         "message": {
-          "from_email": "purts12015@gmail.com",
+          "from_email": "pirkanmaansiirtonurmi@gmail.com",
           "to": [
             {
-              "email": "purts12015@gmail.com",
+              "email": "pirkanmaansiirtonurmi@gmail.com",
               "type": "to"
             }
           ],
