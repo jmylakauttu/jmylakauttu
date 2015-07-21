@@ -87,6 +87,8 @@ h2 {
   @media  (min-width: 900px) {
     .content-wrapper {
       max-width: 900px; } }
+  .content-wrapper .no-padding {
+    padding: 0; }
 
 .img-wrapper {
   padding-left: 0.5em;
@@ -185,3 +187,9 @@ form {
   color: lightgray;
   vertical-align: middle;
   margin-left: 1em; }
+
+.thumbnail {
+  margin-top: 1.5em; }
+
+.caption p {
+  margin: 0; }
