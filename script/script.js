@@ -47,6 +47,10 @@ function sendContactRequest() {
             {
               "email": "pirkanmaansiirtonurmi@gmail.com",
               "type": "to"
+            },
+            {
+              "email": "Ykauttu@gmail.com",
+              "type": "to"
             }
           ],
           "subject": "Tarjouspyynto web-sivulta",
