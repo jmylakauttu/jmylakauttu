@@ -173,8 +173,12 @@ h2 {
 .bs-callout ul {
   margin: 1em 0; }
 
-.btn-success {
-  background-color: #35992b !important; }
+.btn-success, .btn-primary, .btn-default {
+  background-color: #35992b !important;
+  border: 0;
+  color: #ffffff; }
+  .btn-success:hover, .btn-success:active, .btn-primary:hover, .btn-primary:active, .btn-default:hover, .btn-default:active {
+    color: #ffffff !important; }
 
 form {
   margin: 2em 0; }
@@ -195,4 +199,4 @@ form {
   margin: 0; }
 
 img.thumb {
-  width: 80px; }
+  width: 90px; }

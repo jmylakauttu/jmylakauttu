@@ -226,8 +226,13 @@ h2 {
     margin: 1em 0;
 }
 
-.btn-success {
-    background-color: $green !important;
+.btn-success, .btn-primary, .btn-default {
+  background-color: $green !important;
+  border: 0;
+  color: #ffffff;
+  &:hover, &:active {
+    color: #ffffff !important;
+  }
 }
 
 form {
@@ -254,5 +259,5 @@ form {
 }
 
 img.thumb {
-  width: 80px;
+  width: 90px;
 }
