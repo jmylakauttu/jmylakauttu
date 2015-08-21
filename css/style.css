@@ -44,7 +44,7 @@ header {
       list-style: none;
       float: left;
       text-align: center;
-      margin-right: 1em; }
+      margin-right: 2em; }
       header nav li a, header nav li a span {
         color: #ffffff !important;
         text-transform: uppercase;
@@ -193,3 +193,6 @@ form {
 
 .caption p {
   margin: 0; }
+
+img.thumb {
+  width: 100px; }

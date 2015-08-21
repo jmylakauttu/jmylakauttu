@@ -95,7 +95,7 @@ header {
       list-style: none;
       float: left;
       text-align: center;
-      margin-right: 1em;
+      margin-right: 2em;
 
       a, a span {
         color: $white !important;
@@ -251,4 +251,8 @@ form {
 
 .caption p {
   margin: 0;
+}
+
+img.thumb {
+  width: 100px;
 }
