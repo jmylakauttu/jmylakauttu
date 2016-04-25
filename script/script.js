@@ -34,28 +34,14 @@ function sendContactRequest() {
   } else {
     spinner.show();
     sendButton.prop('disabled', true);
-    var message = "<p>" + email + "</p>" + "<p>" + phone + "</p>" + "<p>" + desc + "</p>";
 
     $.ajax({
       type: "POST",
-      url: "https://mandrillapp.com/api/1.0/messages/send.json",
+      url: "https://boiling-tundra-67911.herokuapp.com/contact",
       data: {
-        "key": "bfe92QqfRMzq6bLatXy4CQ",
-        "message": {
-          "from_email": "pirkanmaansiirtonurmi@gmail.com",
-          "to": [
-            {
-              "email": "pirkanmaansiirtonurmi@gmail.com",
-              "type": "to"
-            },
-            {
-              "email": "Ykauttu@gmail.com",
-              "type": "to"
-            }
-          ],
-          "subject": "Tarjouspyynto web-sivulta",
-          "html": message
-        }
+        "email": email,
+        "phone": phone,
+        "desc" : desc
       }
     }).done(function(response) {
       sendOk.show();
