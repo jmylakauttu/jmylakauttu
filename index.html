@@ -226,21 +226,21 @@
     <form>
 
         <div class="form-group">
+          <label for="email">Puhelin</label>
+          <input class="form-control" type="text" size="20" placeholder="Puhelinnumerosi" id="phone">
+        </div>
+
+        <div class="form-group">
             <label for="email">Sähköposti</label>
             <input class="form-control" type="email" size="20" placeholder="Sähköpostiosoitteesi" id="email">
         </div>
 
         <div class="form-group">
-            <label for="email">Puhelin</label>
-            <input class="form-control" type="text" size="20" placeholder="Puhelinnumerosi" id="phone">
+            <label for="desc">Viesti</label>
+            <textarea rows="10" class="form-control" placeholder="Tarjouspyynnön viesti" id="desc"></textarea>
         </div>
 
-        <div class="form-group">
-            <label for="desc">Kuvaus</label>
-            <textarea rows="10" class="form-control" placeholder="Tarjouspyynnön kuvaus" id="desc"></textarea>
-        </div>
-
-        <div class="alert alert-danger" role="alert" id="validation-failed">Ole hyvä ja anna sähköpostiosoitteesi tai puhelinnumerosi, jotta voimme olla sinuun yhteydessä.</div>
+        <div class="alert alert-danger" role="alert" id="validation-failed">Ole hyvä ja anna puhelinnumerosi, jotta voimme olla sinuun yhteydessä.</div>
         <div class="alert alert-danger" role="alert" id="send-failed">Tarjouspyynnön lähettäminen ei onnistunut. Voit myös ottaa yhteyttä suoraan puhelimella numeroon 0500 732437.</div>
         <div class="alert alert-success" role="alert" id="send-ok">Tarjouspyyntö lähetetty. Olemme sinuun yhteydessä niin pian kuin mahdollista!</div>
 
@@ -286,13 +286,14 @@
 </div>
 
 <footer>
-    <div class="content-wrapper">
-        <h4>Yhteystiedot</h4>
-        <p>Juha Ylä-Kauttu</p>
-        <p>Kautun Rantatie 35</p>
-        <p>34600 Ruovesi</p>
-        <p>0500 732437</p>
-    </div>
+  <div class="content-wrapper contact-info">
+      <h4>Yhteystiedot</h4>
+      <p>Juha Ylä-Kauttu</p>
+      <p>Kautun Rantatie 35</p>
+      <p>34600 Ruovesi</p>
+      <p>0500 732437</p>
+      <div class="contact-info__copy">&copy; JM Ylä-Kauttu Oy 2016</div>
+  </div>
 </footer>
 
 

@@ -29,7 +29,7 @@ function sendContactRequest() {
   sendFailed.hide();
   sendOk.hide();
 
-  if(!email && !phone) {
+  if(!phone) {
     validationFailed.show();
   } else {
     spinner.show();

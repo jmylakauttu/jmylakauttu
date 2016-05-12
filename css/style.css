@@ -200,3 +200,16 @@ form {
 
 img.thumb {
   width: 90px; }
+
+.contact-info {
+  position: relative; }
+
+@media (max-width: 500px) {
+  .contact-info__copy {
+    margin-top: 2em; } }
+
+@media (min-width: 500px) {
+  .contact-info__copy {
+    position: absolute;
+    right: 0;
+    bottom: 0; } }

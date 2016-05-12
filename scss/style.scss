@@ -261,3 +261,18 @@ form {
 img.thumb {
   width: 90px;
 }
+
+.contact-info {
+  position: relative;
+}
+
+.contact-info__copy {
+  @include breakpoint($mobile-only) {
+    margin-top: 2em;
+  }
+  @include breakpoint($small) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
