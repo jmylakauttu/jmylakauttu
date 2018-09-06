@@ -166,9 +166,11 @@ h2 {
 .bg-jumbotron p {
   color: #ffffff;
   font-size: 25px;
-  text-transform: uppercase;
   text-align: center;
-  margin-top: 130px; }
+  margin-top: 60px; }
+  @media (max-width: 500px) {
+    .bg-jumbotron p {
+      margin-top: 15px; } }
 
 .bs-callout ul {
   margin: 1em 0; }
